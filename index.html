@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
   <meta charset="utf-8">
@@ -11,29 +11,40 @@
 </head>
 
 <body>
-  <h1>主标题</h1>
+  <h1 id="head">主标题</h1>
+  <span style="font-size: 32px; margin: 21px 0;">不要使用这样的顶级标题</span>
   <h2 id="id-1">顶层标题</h2>
   <h3>子标题</h3>
   <h4>次子标题</h4>
   <p>这是一个段落</p>
-  <p>Japanese example: ご飯が熱い。</p>
-  <p>我的猫咪脾气爆:)</p>
-  <p>我的猫咪脾气<strong>爆</strong>:)</p>
-  <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
-
+  <p>这是<strong>粗体</strong>，这是<em>斜体</em></p>
+  <p>Japanese example:<span lang="jp">ご飯が熱い。</span></p>
+  <a href="https://www.baidu.com/" title="指向百度的连接">百度</a>
+  <p>指向另一个页面的<a href="link-page/another.html#qq_number">qq号码</a>。</p>
+  <p>无序列表</p>
   <ul>
     <li>技术人员</li>
     <li>思考者</li>
     <li>建造者</li>
   </ul>
+  <p>有序列表</p>
   <ol>
-    <li>技术人员</li>
-    <li>思考者</li>
-    <li>建造者</li>
+    <li>项目1</li>
+    <li>项目2，嵌套列表
+      <ul>
+        <li>子项目1</li>
+        <li>子项目2</li>
+      </ul>
+    </li>
+    <li>项目3</li>
+
   </ol>
-  <p>我们致力于……</p>
+  <p>
+    <a href="images/1.jpg" download="picture.jpg">
+      下载图片
+    </a></p>
   <img src="images/1.jpg" alt="My test image">
-  <a href="https://www.baidu.com/">百度</a>
+  <p>返回<a href="#head">页面头部</a>。</p>
   <button>切换用户</button>
   <script src="scripts/main.js" defer></script>
 </body>
